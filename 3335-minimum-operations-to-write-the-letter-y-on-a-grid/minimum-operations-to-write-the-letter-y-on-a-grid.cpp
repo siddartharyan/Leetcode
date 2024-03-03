@@ -44,14 +44,12 @@ public:
             for(int j=0;j<3;++j){
                 if(i==j) continue;
                 // second make rest = j;
-                vector<vector<int>>d1=d;
                 int op2 = 0;
                 for(x1=0;x1<m;++x1){
                     for(y1=0;y1<n;++y1){
-                        if(d1[x1][y1] == -(1000*(i+1))) continue;
-                        else if(d1[x1][y1] != j){
+                        if(d[x1][y1] == -(1000*(i+1))) continue;
+                        else if(d[x1][y1] != j){
                             ++op2;
-                            d1[x1][y1]=j;
                         }
                     }
                 }
