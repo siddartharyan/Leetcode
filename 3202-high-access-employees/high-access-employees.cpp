@@ -33,12 +33,12 @@ public:
                 for(int j=i+1;j<n;++j){
                     if(t[j]<end) ++c;
                     else break;
-                    if(c>=3) break;
+                    if(c>=3){
+                        f=true;
+                        break;
+                    }
                 }
-                if(c>=3){
-                    f=true;
-                    break;
-                }
+                if(f) break;
             }
             if(f) ans.push_back(x.first);
         }
