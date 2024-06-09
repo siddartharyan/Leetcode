@@ -1,8 +1,6 @@
 class Solution {
 public:
     int numberOfChild(int n, int k) {
-        vector<int>t;
-        for(int i=0;i<n;++i) t.push_back(i);
         int start=0;
         bool f = true;
         while(k--){
