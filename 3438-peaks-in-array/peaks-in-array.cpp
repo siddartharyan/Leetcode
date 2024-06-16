@@ -30,7 +30,7 @@ public:
         int j=0,val=0;
         for(auto &x:queries){
             if(x[0] == 1){
-                val = (x[2]-x[1]<2?0:query(x[2])-(x[1] == 0?0:query(x[1]-1))-isPeak(x[2],n,nums)-isPeak(x[1],n,nums));
+                val = (x[2]-x[1]<2?0:query(x[2]-1)-(x[1] == 0?0:query(x[1])));
                 ans.push_back(val);
             }else{
                 vector<int>prev;
